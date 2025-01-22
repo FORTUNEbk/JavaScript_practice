@@ -9,17 +9,10 @@
     <p>Rock Paper Scissors</p>
 
     <button onclick ="
-    let computerMove ='';
     let result = '';
-    const randomNumber = Math.random();
     const playerMove = 'Rock';
-    if(randomNumber >= 0 && randomNumber < 1/3){
-         computerMove = 'Rock';
-    }else if(randomNumber >= 1/3 && randomNumber < 2/3){
-         computerMove ='Scissors';
-    }else if(randomNumber >= 2/3 && randomNumber< 1){
-         computerMove ='Paper';
-    }
+
+    
     if(computerMove === 'Scissors'){
          result = 'You win!';
     }else if(computerMove === 'Rock'){
@@ -85,6 +78,17 @@
     
 
     <script>
+
+let computerMove ='';
+
+const randomNumber = Math.random();
+    if(randomNumber >= 0 && randomNumber < 1/3){
+         computerMove = 'Rock';
+    }else if(randomNumber >= 1/3 && randomNumber < 2/3){
+         computerMove ='Scissors';
+    }else if(randomNumber >= 2/3 && randomNumber< 1){
+         computerMove ='Paper';
+    }
 
 
     </script>
